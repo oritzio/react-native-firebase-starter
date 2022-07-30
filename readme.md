@@ -46,4 +46,4 @@ Everything is working properly right after you update the firebase.js with your 
 
 #### Enjoy
 
-*Author [Maor Tzabari](https://https://oritzio.com/)*
+*Author [Maor Tzabari](https://oritzio.com/)*
