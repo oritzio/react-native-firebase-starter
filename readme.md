@@ -4,6 +4,17 @@ React Native Firebase Authentication Starter
 Sign up and sign in screens for mobile using React Native.
 This is an example of how to use Firebase Authentication in React Native application, how to let users create an account or log in to an existing account.
 
+Get Started
+----------
+
+1. In the terminal clone the repo `git clone [repolink]`.
+2. In the terminal go to the root directory of the app.
+3. Run `npm i` to install dependencies.
+4. Run `npm start` to run the application.
+5. Make sure you have the Expo app installed on your phone.
+6. Scan the QR code with your phone camera or with QR scanner.
+7. That's it, the app should open the expo app and run the app on your phone.
+
 How to use
 ----------
 
