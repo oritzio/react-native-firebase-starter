@@ -1,6 +1,8 @@
 React Native Firebase Authentication Starter
 =====================================
 
+![Preview](./assets/preview1.jpg)
+
 Sign up and sign in screens for mobile using React Native.
 This is an example of how to use Firebase Authentication in React Native application, how to let users create an account or log in to an existing account.
 
