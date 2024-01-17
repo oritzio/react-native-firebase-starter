@@ -1,10 +1,15 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import SignOut from './components/SignOut';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 
@@ -25,11 +30,12 @@ export default function App() {
   }, [currentUser])
 
   return (
-    <View style={styles.container}>
-      <SignUp user={currentUser} setUser={setCurrentUser} />
-      {/* <SignIn user={currentUser} setUser={setCurrentUser} /> */}
-      {/* <SignOut user={currentUser} /> */}
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}} />
+        <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

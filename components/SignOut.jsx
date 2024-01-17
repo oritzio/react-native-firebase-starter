@@ -1,8 +1,11 @@
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { auth } from '../firebase';
 import { signOut } from "firebase/auth";
+import { useNavigation } from '@react-navigation/native';
 
 function SignOut({user}) {
+
+  const navigation = useNavigation();
 
   const userSignOut = async () => {
     try {
